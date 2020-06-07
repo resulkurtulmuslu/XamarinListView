@@ -10,7 +10,7 @@ namespace Mobile.ListView
         {
             InitializeComponent();
 
-            MainPage = new ObservableData();
+            MainPage = new GruppingItems();
         }
 
         protected override void OnStart()
