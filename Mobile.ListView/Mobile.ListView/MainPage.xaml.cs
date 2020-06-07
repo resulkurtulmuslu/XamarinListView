@@ -16,6 +16,14 @@ namespace Mobile.ListView
         public MainPage()
         {
             InitializeComponent();
+
+            lstView.ItemsSource = new string[] {
+            "İtem 1",
+            "İtem 2",
+            "İtem 3",
+            "İtem 4",
+            "İtem 5"
+            };
         }
     }
 }

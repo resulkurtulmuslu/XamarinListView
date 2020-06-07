@@ -6,11 +6,31 @@
              mc:Ignorable="d"
              x:Class="Mobile.ListView.MainPage">
 
-    <StackLayout>
-        <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
+    <!--<ListView x:Name="lstView">
+        <ListView.ItemsSource>
+            <x:Array Type="{x:Type x:String}">
+                <x:String>İtem 1</x:String>
+                <x:String>İtem 2</x:String>
+                <x:String>İtem 3</x:String>
+                <x:String>İtem 4</x:String>
+                <x:String>İtem 5</x:String>
+            </x:Array>
+        </ListView.ItemsSource>
+    </ListView>-->
+
+    <ListView x:Name="lstView" 
+              SeparatorVisibility="Default"
+              SeparatorColor="Gray">
+        <ListView.Header>
+        <StackLayout>
+            <Label x:Name="header" Text="Header" BackgroundColor="Gray" TextColor="White"></Label>
+        </StackLayout>
+        </ListView.Header>
+        <ListView.Footer>
+            <StackLayout>
+                <Label x:Name="footer" Text="Footer" BackgroundColor="Gray" TextColor="White"></Label>
+            </StackLayout>
+        </ListView.Footer>
+    </ListView>
 
 </ContentPage>

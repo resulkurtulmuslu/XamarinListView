@@ -6,6 +6,12 @@
              mc:Ignorable="d"
              x:Class="Mobile.ListView.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <OnPlatform x:TypeArguments="x:String"
+                        x:Key="FontAwesomeRegular">
+                <On Platform="Android" Value="Font Awesome 5 Free-Regular-400.otf#Font Awesome 5 Free Regular"></On>
+                <On Platform="iOS" Value="Font Awesome 5 Free"></On>
+            </OnPlatform>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

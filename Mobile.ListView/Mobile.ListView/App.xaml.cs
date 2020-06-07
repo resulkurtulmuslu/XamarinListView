@@ -10,7 +10,7 @@ namespace Mobile.ListView
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new ViewCells();
         }
 
         protected override void OnStart()
